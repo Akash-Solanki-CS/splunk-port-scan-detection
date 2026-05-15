@@ -24,7 +24,7 @@ This project demonstrates reconnaissance and port scan detection using Splunk SI
 Performed SYN scan using:
 
 ```bash
-nmap -sS -Pn -p- 192.168.56.103
+nmap -sS 192.168.56.103
 ```
 
 ## Log Collection
@@ -38,3 +38,5 @@ nmap -sS -Pn -p- 192.168.56.103
 source="ufw.log" | top SRC
 
 source="ufw.log" "UFW BLOCK"
+
+source="ufw.log" SYN 
