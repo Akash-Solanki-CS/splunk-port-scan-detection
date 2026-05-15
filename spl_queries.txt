@@ -1,0 +1,13 @@
+# source="ufw.log"
+
+blocked traafic 
+# source="ufw.log" "UFW BLOCK"
+
+top attacker IPS 
+# source="ufw.log" | top SRC
+
+most targated ports 
+# source="ufw.log" | top DPT
+
+only syn scan detect
+# source="ufw.log" SYN
